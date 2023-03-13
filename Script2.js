@@ -57,28 +57,28 @@ function runScript(event) {
     var div = document.createElement("div")
     div.id = resultId
     document.getElementById('diw').appendChild(div)
-    const numberElem = addDivWithMassege(resultId, guess );
+    const numberElem = addDivWithMassege(resultId, guess);
     numberElem.className = "number"
     addPictograms(resultId, numberOfWrong, "wrong")
     addPictograms(resultId, numberOfPresent, "true")
     addPictograms(resultId, numberOfMatches, "clean")
-    
+
     var clear = document.createElement("div")
     clear.className = "clear";
     document.getElementById(resultId).appendChild(clear)
-    
+
   } else {
     addDivWithMassege("diw", "Ви вгадали! Дуже добре! 💰 Вам понадобилось " + numberOfGuess + " спроб. ")
     document.getElementById("btn").disabled = "true"
   }
 }
-function addPictograms(parentId, count, picClass){
+function addPictograms(parentId, count, picClass) {
   for (let i = 0; i < count; i++) {
-    
+
     var pic = document.createElement("div")
     pic.className = picClass;
     document.getElementById(parentId).appendChild(pic)
-}
+  }
 }
 
 function generateNumber() {
