@@ -1,0 +1,38 @@
+#error {
+    color: red
+}
+#diw {
+    color:blue
+}
+.wrong{
+    background-image: url("img/wrong false icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 40px;
+    float: left;
+    margin-left: -5px;
+}
+.true{
+    background-image: url("img/загружено.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 30px;
+    float: left;
+    }
+.clean{
+    background-image: url("img/pngtree-cute-light-star-with-black-frame-png-image_1633374.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 30px;
+    float: left;
+}
+.number{
+    float: left;
+    margin-right: 5px;
+}
+    .clear{
+        clear: both;
+    }
